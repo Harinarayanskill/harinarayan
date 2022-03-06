@@ -1,0 +1,119 @@
+ <!doctype html>
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>earth</title> 
+  <style>
+ 
+  body{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+   
+   .searth{
+     width:300px;
+     height:300px;
+     background-color: blue;
+     position: relative;
+     top:200px;
+     border-radius: 100%;
+     display:flex;
+     align-items: center;
+     justify-content:center;
+     z-index: 5;
+     background-image: linear-gradient(60deg,#02FFEF ,black 22%);
+     animation: planet 6s linear infinite;
+   }
+    @keyframes planet{
+      0%{
+        transform: rotate(0deg);
+        
+      }
+      100%  {
+        transform: rotate(360deg);
+      }
+     
+    }
+   
+   .earth{
+     width:200px;
+     height:200px;
+     background-color: green;
+     position: relative;
+    z-index: 500;
+     border-radius: 50%;
+     background-image:url(https://www.dropbox.com/s/03unt1jzls0lqcr/earth.jpg?dl=1);
+     background-repeat:repeat-x;
+     background-size:500px;
+     animation: ro 40s linear infinite;
+     
+   }
+   @keyframes ro{
+     0%{
+       background-position:0% 0%;
+     }
+     100%{
+       background-position: 1001% 0%;
+     }
+   }
+    
+    .just{
+      width: 290px;
+      height:290px;
+      border-radius: 50%;
+      background-color: black;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     animation: counter 6s linear infinite;
+    }
+    
+    @keyframes counter{
+     0%{
+       transform: rotate (0deg);
+     } 
+    100%{
+      transform: rotate(-360deg);
+    }  
+      
+    }
+    .sate{
+      width:9px;
+      height:10px;
+      background-color:#02FFEF ;
+      display:inline;
+      z-index: 5993;
+    }
+    .shadoww{
+           width:215px;
+     height:215px;
+    
+     position: relative;
+    
+     top:-60px;
+     right:0px;
+    z-index: 3737370;
+     border-radius: 50%;
+     background-image: linear-gradient(45deg,black 20%, transparent);
+     box-sizing: border-box;
+    
+  
+    }
+    
+  </style> 
+ </head> 
+ <body> 
+     <h1 style="color:black;">Hari Narayan</h1>
+  <div class="searth"> 
+   <div class="sate"></div> 
+   <div class="just"> 
+    <div class="earth"></div> 
+   </div> 
+  </div> 
+  <div class="shadoww"></div> 
+ </body>
+</html>
